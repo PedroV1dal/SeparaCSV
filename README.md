@@ -45,6 +45,16 @@ Cada bloco de colunas é processado da seguinte maneira:
 3. Os dados processados são adicionados a um arquivo separado para cada coluna.
 4. Os arquivos das colunas são combinados em um único arquivo final.
 
+## Features
+
+- [x] Separar arquivos
+- [x] Restringir apenas para colunas de strings
+- [x] Juntar os arquivos separados em um só
+- [x] Adicionar threads
+- [x] Adicionar IDs
+- [ ] Separação por blocos
+- [ ] Arrumar IDs
+
 ## Considerações
 
 Este código foi escrito com base nas bibliotecas padrão do C++ e assume que o arquivo CSV de entrada possui um cabeçalho na primeira linha. Certifique-se de fornecer um arquivo CSV válido com os dados apropriados.
