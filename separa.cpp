@@ -20,6 +20,8 @@ void add_to_file(const std::vector<std::string>& dados, const std::string& nomeA
         std::cerr << "Erro ao abrir o arquivo " << nomeArquivo << std::endl;
         return;
     }
+    
+    std::lock_guard<std::mutex> lock(mutex);  // Adquire o bloqueio exclusivo
 
     // Adiciona cada valor dos dados ao arquivo, seguido por uma nova linha
     for (const auto& valor : dados) {
